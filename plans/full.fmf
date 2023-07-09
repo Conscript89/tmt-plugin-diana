@@ -1,0 +1,22 @@
+summary: Provisioning with full specification
+provision:
+  how: diana
+  hardware:
+    memory: ">= 8 GB"
+  kickstart:
+    pre-install: |
+      %pre
+      date > /tmp/start_time
+      %end
+    script: |
+      # something
+      post-install: |
+        %post --nochroot
+        (
+          cat /tmp/start_time
+          date
+        ) > /mnt/sysimage/root/times
+        %end
+execute:
+    how: tmt
+    script: /bin/true

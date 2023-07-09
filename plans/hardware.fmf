@@ -1,0 +1,8 @@
+summary: Provisioning with hardware specification
+provision:
+  how: diana
+  hardware:
+    memory: ">= 8 GB"
+execute:
+  how: tmt
+  script: /bin/true
