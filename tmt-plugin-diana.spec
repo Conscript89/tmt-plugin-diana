@@ -10,7 +10,7 @@ URL: https://github.com/Conscript89/tmt-plugin-diana
 Source0: https://github.com/Conscript89/tmt-plugin-diana/releases/download/%{version}/tmt-plugin-diana-%{version}.tar.gz
 
 %generate_buildrequires
-%pyproject_buildrequires -t
+%pyproject_buildrequires
 
 %description
 TMT Diana provisioner plugin that allows to use libvirt hypervisor and fully customise provisioned system (including kickstart and hardware specification).
