@@ -1,0 +1,23 @@
+[project]
+name = 'tmt.steps.provision.diana'
+version = '0.0.1'
+description = 'TMT Diana provisioner'
+readme = 'README.md'
+requires-python = '>=3.7'
+license = {file = 'LICENSE.txt'}
+authors = [
+ {name = "Pavel Holica", email="conscript89@gmail.com"}
+]
+dependencies = [
+ "tmt"
+]
+
+[tool.setuptools]
+package-data = {}
+py-modules = [
+ 'tmt.steps.provision.diana'
+]
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
